@@ -1,0 +1,42 @@
+@import './../../../../../../assets/scss/variables/color';
+@import './../../../../../../assets/scss/variables/font';
+
+.form-check-input {
+  position: static;
+  margin-top: 0;
+  margin-left: 0.5rem;
+}
+
+.form {
+  margin: 0 auto;
+  font-family: $font-family-regular;
+  &-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    button {
+      border-radius: 20px;
+      font-family: $font-family-bold;
+      padding: 5px 10px;
+      img {
+        width: 10px;
+        margin-right: 5px;
+      }
+    }
+  }
+  &-group {
+    &-new-task {
+      font-family: $font-family-bold;
+      color: white;
+    }
+    &-checkbox {
+      font-family: $font-family-light;
+      display: flex;
+    }
+  }
+  label {
+    color: white;
+    font-size: $small-font-size;
+    margin: 0;
+  }
+}

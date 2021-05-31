@@ -1,0 +1,15 @@
+@import './../../../../assets/scss/variables/font';
+
+input {
+  border-left-style: none;
+  border-right-style: none;
+  border-top-style: none;
+  background: transparent;
+  padding-left: 0;
+}
+
+input::placeholder {
+  color: white;
+  font-family: $font-family-regular;
+
+}

@@ -1,0 +1,75 @@
+$green: #2ec973;
+$yellow: #ffa300;
+$blue-dark: #283552;
+$blue: #365e80;
+$blue-light: #1dc1c1;
+$contrast: white;
+
+/* ****************************************************
+ * Principal colors, usually for theme the app
+ * ****************************************************/
+
+
+$blue-gradient:radial-gradient(circle, rgba(0,129,241,1) 20%, rgba(0,54,78,1) 68%);;
+
+// Color for general text, paragraphs, etc.
+$color-common: #01CEB6;
+$color-common-contrast: white;
+
+// Color primary, usually for navs, headers, buttons
+$color-primary: #4B9F8E;
+$color-primary-contrast: #fff;
+
+// Color secondary, usually to contrast or join with primary color
+$color-secondary: #00d577;
+$color-secondary-contrast: #fff;
+
+// Color tertiary, usually to emphasis some buttons or actions
+$color-tertiary: #00364e;
+$color-tertiary-contrast: white;
+
+$color-highlight: #f4f6f9;
+$color-button-gray: #c7c7c7;
+
+$bg-common: linear-gradient(135deg, $color-primary 0%, $color-common 50%);
+$vertical-gradient: linear-gradient(135deg, $color-primary 0%, $color-common 50%);
+
+/* ****************************************************
+ * State colors, usually to represent status, or actions
+ * ****************************************************/
+
+$color-active: #00D477;
+$color-active-contrast: white;
+
+$color-warning: #FFA200;
+$color-warning-contrast: white;
+
+$color-info: #1d9ac1;
+$color-info-contrast: white;
+
+$color-alert: #FF4759;
+$color-alert-contrast: white;
+
+$color-default: #e5e5e5;
+$color-default-contrast: #283552;
+
+$color-disabled: #e5e5e5;
+$color-disabled-contrast: white;
+
+/* ****************************************************
+ * Gray tones to use in shadows, borders, lines, etc
+ * ****************************************************/
+
+$color-gray-1: #252525;
+
+$color-gray-2: #4a4a4a;
+
+$color-gray-3: #868686;
+
+$color-gray-4: #a2a2a2;
+
+$color-gray-5: #e2e2e2;
+
+$color-gray-6: #f8f8f8;
+
+$color-gray-7: #f6f6f6;

@@ -1,0 +1,50 @@
+@import './../../../../assets/scss/variables/font';
+@import './../../../../assets/scss/variables/color';
+
+.todo {
+  position: relative;
+  &-logo {
+    display: flex;
+    justify-content: center;
+    img {
+      width: 15rem;
+    }
+  }
+  &-form {
+    background: $color-common;
+  }
+  &-search {
+    display: flex;
+    margin: 2rem 0;
+    justify-content: space-between;
+    &-list {
+      color: $color-common;
+      font-weight: $font-family-black;
+      font-size: 1.3rem;
+    }
+  }
+  content {
+    margin: 0 auto;
+  }
+  &-repo {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+    right: 2rem;
+    img {
+      width: 4rem;
+    }
+    a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
+
+.delete-icon {
+  width: 15px;
+}
+
+

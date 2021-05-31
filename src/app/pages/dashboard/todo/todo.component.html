@@ -1,0 +1,57 @@
+<div class="todo">
+  <div class="todo-logo">
+    <img src="/assets/img/logo.png" alt="" />
+  </div>
+
+  <div class="todo-form">
+    <app-todo-form></app-todo-form>
+  </div>
+  <div class="container col-sm-8 content">
+    <div class="todo-search">
+      <div class="todo-search-list">Lista de tareas</div>
+      <app-input-search
+        #txtSearch
+        placeholder="Buscar"
+        (keyup)="onSearchTodo(txtSearch.value)"
+      ></app-input-search>
+    </div>
+
+    <app-datatable
+      [header]="['id', 'Mis tareas', 'Completada', 'Borrar']"
+      [paginateRange]="range"
+      [isDisabled]="(todos$ | paginate: range:search)?.length === 0"
+      [numberPages]="todos$.length"
+      (previousPage)="goToPreviousPage()"
+      (nextPage)="goToNextPage()"
+    >
+      <tbody>
+        <tr *ngFor="let row of todos$ | paginate: range:search">
+          <td>{{ row.id }}</td>
+          <td>{{ row.title }}</td>
+          <td>
+            <input
+              #todoState
+              type="checkbox"
+              [checked]="row.state"
+              (click)="updateTodo(row, todoState.checked)"
+            />
+          </td>
+          <td>
+            <img
+              class="delete-icon"
+              src="/assets/img/icons/trash-alt-regular.svg"
+              (click)="deleteTodo(row.id)"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </app-datatable>
+  </div>
+  <div class="todo-repo">
+    <a href="https://github.com/kikegstv/test-covinoc" target="_blank">
+      <img src="/assets/img/icons/github.svg" alt="" />
+      <p>Link al repo</p>
+    </a>
+
+  </div>
+</div>

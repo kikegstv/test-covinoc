@@ -1,0 +1,22 @@
+<div class="form col-sm-8 py-4">
+  <form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <div class="form-body">
+      <div class="form-group">
+        <div class="form-group-new-task">Nueva tarea</div>
+        <label>Titulo</label>
+        <app-input-text formControlName="title" placeholder="Ingrese titulo"></app-input-text>
+      </div>
+      <div class="form-group-checkbox">
+        <label>Tarea completada</label>
+        <input
+          type="checkbox"
+          class="form-check-input"
+          formControlName="state"
+        />
+      </div>
+      <button class="btn btn-light" type="submit" [disabled]="form.invalid">
+        <img src="/assets/img/icons/plus-black.svg" alt=""> Guardar tarea
+      </button>
+    </div>
+  </form>
+</div>

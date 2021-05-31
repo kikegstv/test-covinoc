@@ -1,0 +1,15 @@
+<input
+  class="form-control"
+  required
+  #input
+  [id]="id"
+  [type]="type"
+  (input)="onInput($event)"
+  [value]="value"
+  [placeholder]="placeholder"
+  [disabled]="isDisabled || disabled"
+  [attr.maxlength]="maxlength"
+  [attr.required]="required"
+  [attr.inputmode]="inputmode"
+  autocomplete="off"
+>

@@ -1,0 +1,18 @@
+<table class="table">
+  <thead>
+      <th *ngFor="let head of header">{{head}}</th>
+  </thead>
+  <ng-content></ng-content>
+
+</table>
+
+<div class="paginator">
+  <div class="paginator-previous" (click)="onGoToPreviousPage()">
+    <img src="/assets/img/icons/chevron-left.svg" alt="">
+  </div>
+  <div class="paginator-number" *ngFor="let number of pages">{{number}}</div>
+  <div class="paginator-next" (click)="onGoToNextPage()">
+    <img src="/assets/img/icons/chevron.svg" alt="">
+  </div>
+
+</div>

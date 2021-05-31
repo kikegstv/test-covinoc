@@ -1,0 +1,65 @@
+@font-face {
+  font-family: Roboto-Thin;
+  font-style: normal;
+  font-weight: 100;
+  src: url("/assets/fonts/Roboto/Roboto-Thin.ttf");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: Roboto-Light;
+  font-style: normal;
+  font-weight: 300;
+  src: url("/assets/fonts/Roboto/Roboto-Light.ttf");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: Roboto-Regular;
+  font-style: normal;
+  font-weight: 400;
+  src: url("/assets/fonts/Roboto/Roboto-Regular.ttf") format("ttf");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: Roboto-Medium;
+  font-style: normal;
+  font-weight: 500;
+  src: url("/assets/fonts/Roboto/Roboto-Medium.ttf") format("ttf");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: Roboto-Bold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("/assets/fonts/Roboto/Roboto-Bold.ttf") format("ttf");
+  unicode-range: U+000-5FF;
+}
+@font-face {
+  font-family: Roboto-Black;
+  font-style: normal;
+  font-weight: 900;
+  src: url("/assets/fonts/Roboto/Roboto-Black.ttf");
+  unicode-range: U+000-5FF;
+}
+
+$line-height: 1.5em;
+$line-height-mobile: 1.1em;
+
+$font-family-title: Roboto-Regular, sans-serif;
+$font-family-light: Roboto-Light, sans-serif;
+$font-family-regular: Roboto-Regular, sans-serif;
+$font-family-medium: Roboto-Medium, sans-serif;
+$font-family-semibold: Roboto-SemiBold, sans-serif;
+$font-family-bold: Roboto-Bold, sans-serif;
+$font-family-black: Roboto-Black, sans-serif;
+
+$h1-font-size: 2.1rem;
+$h2-font-size: 1.8rem;
+$h3-font-size: 1.5rem;
+$h4-font-size: 1.3rem;
+$h5-font-size: 1.1rem;
+$h6-font-size: 1rem;
+
+$p-font-size: 0.9rem;
+$label-font-size: 0.8rem;
+
+$small-font-size: 0.75rem;
